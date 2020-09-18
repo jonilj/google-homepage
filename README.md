@@ -1,2 +1,2 @@
 # google-homepage
-Google homepage project for The Odin Project.
+Simple Google homepage project for The Odin Project using HTML and CSS.
