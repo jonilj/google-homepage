@@ -5,17 +5,18 @@ ul {
 
 /* Styling for the top navigation bar */
 .topnav {
-    height: 30px;
     position: relative;
     float: right;
     display: flex;
+    height: 35px;
     align-items: center;
-    padding: 10px 10px 0px 35px;
+    padding-right: 10px;
 }
 
 .topnav li {
     display: inline-block;
     vertical-align: middle;
+    padding-top: 15px;
 }
 
 .topnav-list a {
@@ -50,38 +51,11 @@ ul {
     border-radius: 50%;
 }
 
-/* Styling for the bottom navigation bar */
-footer {
-    background-color: #f2f2f2;
-    position: absolute;
-    height: 5rem;
-    bottom: 0;
-    width: 100%;
-}
-
-.bottomnav-left, .bottomnav-right {
-    padding: 5px;
-}
-
-.bottomnav-left a {
-    font-family: 'Arial', sans-serif;
-    color: #5F6368;
-    float: left;
-    padding: 0px 10px;
-}
-
-.bottomnav-right a {
-    font-family: 'Arial', sans-serif;
-    color: #5F6368;
-    float: right;
-    padding: 0px 10px;
-}
-
 /* Styling for logotype */
 .logo {
     display: flex;
-    padding-top: 150px;
-    padding-bottom: 30px;
+    padding-top: 17vh;
+    padding-bottom: 3vh;
     margin: auto;
     width: 100%;
 }
@@ -89,41 +63,55 @@ footer {
 #google-logo {
     margin: auto;
 }
-/* Styling for search bar */
-.search-function {
+
+/* Styling for search bar section */
+.search-container {
     display: block;
+    width: 100%;
 }
 .search-bar-container {
-    display: relative;
+    display: flex;
     margin: auto;
     width: 30%;
-    padding-bottom: 20px;
-    align-content: center;
-    justify-content: center;
-}
-
-#search-border {
-    width: 570px;
-    height: 40px;
-    margin: auto;
+    height: 20px;
     border: 1px solid;
     border-color: rgb(233, 233, 233);
     border-radius: 30px 30px 30px 30px;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.search-icon-container {
+    position: fixed;
+    padding: 12px 0 0 14px;
+    margin: auto; 
+}
+
+.search-icon-container img {
+    opacity: 0.4;
+}
+
+.search-bar-container:hover {
+    box-shadow: 0 0 3px 0 rgb(143, 143, 143);
 }
 
 #search-bar-form {
-    display: flex;
+    display: block;
     margin: auto;
-    height: 70%;
-    width: 80%;
-}
-
-#search-border:hover {
-    box-shadow: 0px 0px 3px 0px rgb(143, 143, 143);
+    height: 30px;
+    width: 85%;
+    cursor: text;
+    border: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    padding-top: 5px;
 }
 
 /* Styling for buttons below search bar */
 .search-buttons {
+    padding-top: 18px;
     display: block;
     margin: auto;
     width: 30%;
@@ -169,6 +157,47 @@ footer {
     text-decoration: underline;
 }
 
+/* Styling for footer area */
+footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 
+/* Styling for left-bottom navigation */
+.bottomnav-list-left {
+    display: flex;
+    padding-left: 0;
+    float: left;
+}
 
+.bottomnav-list-left li {
+    display: inline-block;
+}
+
+/* Styling for left-bottom navigation */
+.bottomnav-list-right {
+    display: flex;
+    padding-right: 25px;
+    float: right;
+}
+
+.bottomnav-list-right li {
+    display: inline-block;
+}
+
+/* Styling for bottom nav links */
+.bottomnav-list-left a, .bottomnav-list-right a {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #5F6368;
+    padding-left: 25px;
+}
+
+.bottomnav-list-left a:hover, .bottomnav-list-right a:hover {
+    text-decoration: underline;
+}
 
